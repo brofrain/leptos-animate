@@ -1,0 +1,18 @@
+.bin
+dist
+target
+node_modules
+
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/
+
+# Editor directories and files
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

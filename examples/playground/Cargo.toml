@@ -1,0 +1,20 @@
+[package]
+name = "playground"
+version = "0.0.0"
+edition.workspace = true
+publish = false
+
+[dependencies]
+educe = "0.6.0"
+leptos = { workspace = true, features = ["csr"] }
+leptos_animate.workspace = true
+console_error_panic_hook.workspace = true
+console_log.workspace = true
+getrandom.workspace = true
+log.workspace = true
+rand.workspace = true
+reactive_stores.workspace = true
+reactive_stores_macro.workspace = true
+
+[lints]
+workspace = true

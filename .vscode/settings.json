@@ -1,0 +1,15 @@
+{
+  "rust-analyzer.check.overrideCommand": ["just", "_rust-analyzer-check"],
+  "rust-analyzer.diagnostics.enable": false,
+  "rust-analyzer.rustfmt.extraArgs": ["+nightly"],
+  "rust-analyzer.cargo.cfgs": ["debug_assertion", "web_sys_unstable_apis"],
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "[javascript][typescript][json][jsonc]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[html][toml][yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

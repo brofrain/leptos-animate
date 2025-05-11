@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "allowUnreachableCode": false,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["ESNext", "DOM"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "noEmit": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "target": "ESNext"
+  },
+  "exclude": ["node_modules", "target"]
+}

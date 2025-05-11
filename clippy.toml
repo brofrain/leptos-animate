@@ -1,0 +1,6 @@
+allow-mixed-uninlined-format-args = false
+avoid-breaking-exported-api = false
+enum-variant-name-threshold = 1
+max-trait-bounds = 1
+too-many-arguments-threshold = 5
+upper-case-acronyms-aggressive = true
