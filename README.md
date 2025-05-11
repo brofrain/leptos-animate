@@ -112,7 +112,7 @@ There are 2 more noteworthy options when defining such a behavior:
 
   - a custom function returning `Future` that is being awaited
 
-  - hook on `onfinish` event on each present [Animation](https://developer.mozilla.org/en-US/docs/Web/API/Animation) for the element
+  - hook on `finish` event on each present [Animation](https://developer.mozilla.org/en-US/docs/Web/API/Animation) for the element
 
 Animating elements leaving the DOM works in a similar fashion:
 
