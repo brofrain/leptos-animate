@@ -62,6 +62,8 @@ version = "0.1.0"
 edition.workspace = true
 rust-version = "1.80.1"
 description = "Animation utilities for Leptos. FLIP, in/out transitions, and helpers for custom animations."
+repository = "https://github.com/brofrain/leptos-animate"
+license = "MIT"
 
 [dependencies]
 leptos.workspace = true
