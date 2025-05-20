@@ -18,6 +18,7 @@ leptos_animate.path = "."
 
 [workspace.lints.rust]
 unsafe_code = "forbid"
+unexpected_cfgs = { level = "warn", check-cfg = ['cfg(web_sys_unstable_apis)'] }
 
 [workspace.lints.clippy]
 pedantic = { level = "warn", priority = -1 }
@@ -58,7 +59,7 @@ must_use_candidate = "allow"
 
 [package]
 name = "leptos_animate"
-version = "0.1.0"
+version = "0.1.1"
 edition.workspace = true
 description = "Animation utilities for Leptos. FLIP, in/out transitions, and helpers for custom animations."
 repository = "https://github.com/brofrain/leptos-animate"

@@ -1,3 +1,9 @@
+#[cfg(not(web_sys_unstable_apis))]
+compile_error!(
+    "This crate utilizes unstable web-sys features and requires \
+     `--cfg=web_sys_unstable_apis` flag to work"
+);
+
 pub mod animation;
 
 mod animate;

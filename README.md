@@ -9,6 +9,16 @@ Animation utilities for [Leptos](https://github.com/leptos-rs/leptos). FLIP, in/
     </p>
 </details>
 
+## ⚠️ Setup
+
+The crate utilizes [unstable web-sys APIs](https://rustwasm.github.io/wasm-bindgen/web-sys/unstable-apis.html). In addition to importing the package, you need to explicitly opt-in to the unstable features via rustflags. The recommended approach is to use a [Cargo configuration file](https://doc.rust-lang.org/cargo/reference/config.html):
+
+```toml
+# .cargo/config.toml
+[build]
+rustflags = ["--cfg=web_sys_unstable_apis"]
+```
+
 ## Features
 
 ### FLIP
