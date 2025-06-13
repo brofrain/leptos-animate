@@ -19,7 +19,7 @@ console_log.workspace = true
 getrandom = { workspace = true, optional = true }
 log.workspace = true
 rand.workspace = true
-tokio = { version = "1.45.0", features = [
+tokio = { version = "1.45.1", features = [
   "rt-multi-thread",
   "macros",
 ], optional = true }
