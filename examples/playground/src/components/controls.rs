@@ -114,7 +114,7 @@ fn tab_button(
             class=move || {
                 [
                     "py-1 px-2 rounded hover:bg-rose-500 transition-all",
-                    (current_tab.get() == tab).then_some("bg-gray-100/20").unwrap_or_default(),
+                    if current_tab.get() == tab { "bg-gray-100/20" } else { "" },
                 ]
                     .join(" ")
             }
