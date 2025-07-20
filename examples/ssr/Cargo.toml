@@ -10,9 +10,9 @@ crate-type = ["cdylib", "rlib"]
 [dependencies]
 axum = { version = "0.8.4", optional = true }
 leptos = { workspace = true }
-leptos_meta = { version = "0.8.2" }
-leptos_axum = { version = "0.8.2", optional = true }
-leptos_router = { version = "0.8.2" }
+leptos_meta = { version = "0.8.3" }
+leptos_axum = { version = "0.8.3", optional = true }
+leptos_router = { version = "0.8.3" }
 leptos_animate.workspace = true
 console_error_panic_hook.workspace = true
 console_log.workspace = true
