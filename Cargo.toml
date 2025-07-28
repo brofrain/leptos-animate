@@ -6,14 +6,14 @@ members = [".", "examples/playground", "examples/ssr"]
 edition = "2021"
 
 [workspace.dependencies]
-leptos = { version = "0.8.4" }
-reactive_stores = { version = "0.2.4" }
-reactive_stores_macro = { version = "0.2.4" }
+leptos = { version = "0.8.6" }
+reactive_stores = { version = "0.2.5" }
+reactive_stores_macro = { version = "0.2.5" }
 console_error_panic_hook = "0.1.7"
 console_log = "1.0.0"
 getrandom = { version = "0.3.3", features = ["wasm_js"] }
 log = "0.4.27"
-rand = "0.9.1"
+rand = "0.9.2"
 leptos_animate.path = "."
 
 [workspace.lints.rust]
@@ -59,7 +59,7 @@ must_use_candidate = "allow"
 
 [package]
 name = "leptos_animate"
-version = "0.1.5"
+version = "0.1.6"
 edition.workspace = true
 description = "Animation utilities for Leptos. FLIP, in/out transitions, and helpers for custom animations."
 repository = "https://github.com/brofrain/leptos-animate"
