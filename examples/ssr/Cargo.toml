@@ -11,15 +11,15 @@ crate-type = ["cdylib", "rlib"]
 axum = { version = "0.8.4", optional = true }
 leptos = { workspace = true }
 leptos_meta = { version = "0.8.5" }
-leptos_axum = { version = "0.8.5", optional = true }
-leptos_router = { version = "0.8.5" }
+leptos_axum = { version = "0.8.6", optional = true }
+leptos_router = { version = "0.8.6" }
 leptos_animate.workspace = true
 console_error_panic_hook.workspace = true
 console_log.workspace = true
 getrandom = { workspace = true, optional = true }
 log.workspace = true
 rand.workspace = true
-tokio = { version = "1.47.0", features = [
+tokio = { version = "1.47.1", features = [
   "rt-multi-thread",
   "macros",
 ], optional = true }
