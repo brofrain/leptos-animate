@@ -6,7 +6,7 @@ members = [".", "examples/playground", "examples/ssr"]
 edition = "2021"
 
 [workspace.dependencies]
-leptos = { version = "0.8.9" }
+leptos = { version = "0.8.10" }
 reactive_stores = { version = "0.2.5" }
 reactive_stores_macro = { version = "0.2.6" }
 console_error_panic_hook = "0.1.7"
@@ -59,7 +59,7 @@ must_use_candidate = "allow"
 
 [package]
 name = "leptos_animate"
-version = "0.1.8"
+version = "0.1.9"
 edition.workspace = true
 description = "Animation utilities for Leptos. FLIP, in/out transitions, and helpers for custom animations."
 repository = "https://github.com/brofrain/leptos-animate"
@@ -70,13 +70,13 @@ leptos.workspace = true
 reactive_stores.workspace = true
 reactive_stores_macro.workspace = true
 anyhow = "1.0.100"
-bon = "3.7.2"
+bon = "3.8.0"
 futures = "0.3.31"
 paste = "1.0.15"
 send_wrapper = "0.6.0"
-wasm-bindgen = "0.2.103"
-wasm-bindgen-futures = "0.4.53"
-web-sys = { version = "0.3.80", features = [
+wasm-bindgen = "0.2.104"
+wasm-bindgen-futures = "0.4.54"
+web-sys = { version = "0.3.81", features = [
   "Animation",
   "AnimationEffect",
   "AnimationPlayState",
