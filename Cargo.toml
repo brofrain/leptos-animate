@@ -6,13 +6,13 @@ members = [".", "examples/playground", "examples/ssr"]
 edition = "2021"
 
 [workspace.dependencies]
-leptos = { version = "0.8.10" }
-reactive_stores = { version = "0.2.5" }
+leptos = { version = "0.8.15" }
+reactive_stores = { version = "0.3.1" }
 reactive_stores_macro = { version = "0.2.6" }
 console_error_panic_hook = "0.1.7"
 console_log = "1.0.0"
-getrandom = { version = "0.3.3", features = ["wasm_js"] }
-log = "0.4.28"
+getrandom = { version = "0.3.4", features = ["wasm_js"] }
+log = "0.4.29"
 rand = "0.9.2"
 leptos_animate.path = "."
 
@@ -29,6 +29,7 @@ fallible_impl_from = "warn"
 float_cmp_const = "warn"
 fn_to_numeric_cast_any = "warn"
 get_unwrap = "warn"
+implicit_clone = "warn"
 missing_const_for_fn = "warn"
 mod_module_files = "warn"
 module_name_repetitions = "warn"
@@ -43,7 +44,6 @@ redundant_type_annotations = "warn"
 rest_pat_in_fully_bound_structs = "warn"
 semicolon_inside_block = "warn"
 str_to_string = "warn"
-string_to_string = "warn"
 suspicious_operation_groupings = "warn"
 trait_duplication_in_bounds = "warn"
 try_err = "warn"
@@ -59,7 +59,7 @@ must_use_candidate = "allow"
 
 [package]
 name = "leptos_animate"
-version = "0.1.9"
+version = "0.1.10"
 edition.workspace = true
 description = "Animation utilities for Leptos. FLIP, in/out transitions, and helpers for custom animations."
 repository = "https://github.com/brofrain/leptos-animate"
@@ -70,13 +70,13 @@ leptos.workspace = true
 reactive_stores.workspace = true
 reactive_stores_macro.workspace = true
 anyhow = "1.0.100"
-bon = "3.8.0"
+bon = "3.8.2"
 futures = "0.3.31"
 paste = "1.0.15"
 send_wrapper = "0.6.0"
-wasm-bindgen = "0.2.104"
-wasm-bindgen-futures = "0.4.54"
-web-sys = { version = "0.3.81", features = [
+wasm-bindgen = "0.2.108"
+wasm-bindgen-futures = "0.4.58"
+web-sys = { version = "0.3.85", features = [
   "Animation",
   "AnimationEffect",
   "AnimationPlayState",
