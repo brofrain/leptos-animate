@@ -5,11 +5,11 @@ use leptos::{
     view,
     IntoView,
 };
-use rand::RngCore;
+use rand::Rng;
 use reactive_stores_macro::Store;
 
 pub trait Random {
-    fn random(rng: &mut impl RngCore) -> Self;
+    fn random(rng: &mut impl Rng) -> Self;
 }
 
 #[derive(PartialEq, Eq, Debug)]
@@ -21,7 +21,7 @@ pub enum Shape {
 }
 
 impl Random for Shape {
-    fn random(rng: &mut impl RngCore) -> Self {
+    fn random(rng: &mut impl Rng) -> Self {
         match rng.next_u32() % 4 {
             0 => Self::Circle,
             1 => Self::Square,
@@ -109,7 +109,7 @@ pub enum Color {
 }
 
 impl Random for Color {
-    fn random(rng: &mut impl RngCore) -> Self {
+    fn random(rng: &mut impl Rng) -> Self {
         match rng.next_u32() % 3 {
             0 => Self::Red,
             1 => Self::Green,
@@ -148,7 +148,7 @@ impl Size {
 }
 
 impl Random for Size {
-    fn random(rng: &mut impl RngCore) -> Self {
+    fn random(rng: &mut impl Rng) -> Self {
         match rng.next_u32() % 10 {
             0..5 => Self::Small,
             5..8 => Self::Medium,
@@ -166,7 +166,7 @@ pub struct Item {
 }
 
 impl Random for Item {
-    fn random(rng: &mut impl RngCore) -> Self {
+    fn random(rng: &mut impl Rng) -> Self {
         static LAST_ID: AtomicUsize = AtomicUsize::new(0);
         Self {
             id: LAST_ID.fetch_add(1, Ordering::AcqRel),

@@ -2,7 +2,6 @@ use std::time::Duration;
 
 use bon::builder;
 use leptos::task::spawn_local;
-use wasm_bindgen::JsValue;
 use web_sys::{
     js_sys::{Array, Object, Reflect},
     Animation,
@@ -43,7 +42,7 @@ pub fn spawn_animation(
     }
 
     let options = KeyframeAnimationOptions::new();
-    options.set_duration(&JsValue::from_f64(duration));
+    options.set_duration(duration);
 
     let animation =
         element.animate_with_keyframe_animation_options(Some(&keyframes), &options);

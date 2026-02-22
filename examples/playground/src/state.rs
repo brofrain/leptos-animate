@@ -1,5 +1,5 @@
 use leptos::prelude::{StoredValue, Update, Write, WriteValue};
-use rand::{rngs::StdRng, seq::SliceRandom, Rng, SeedableRng};
+use rand::{rngs::StdRng, seq::SliceRandom, RngExt, SeedableRng};
 use reactive_stores::Store;
 use reactive_stores_macro::Store as StoreMacro;
 

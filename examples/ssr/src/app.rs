@@ -6,7 +6,7 @@ use leptos_router::{
     components::{FlatRoutes, Route, Router},
     StaticSegment,
 };
-use rand::{rng, seq::SliceRandom, Rng};
+use rand::{rng, seq::SliceRandom, RngExt};
 use rotate_in::RotateIn;
 
 mod button;
