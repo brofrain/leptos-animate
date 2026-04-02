@@ -59,7 +59,7 @@ must_use_candidate = "allow"
 
 [package]
 name = "leptos_animate"
-version = "0.1.12"
+version = "0.1.13"
 edition.workspace = true
 description = "Animation utilities for Leptos. FLIP, in/out transitions, and helpers for custom animations."
 repository = "https://github.com/brofrain/leptos-animate"
@@ -74,9 +74,9 @@ bon = "3.9.1"
 futures = "0.3.32"
 paste = "1.0.15"
 send_wrapper = "0.6.0"
-wasm-bindgen = "0.2.114"
-wasm-bindgen-futures = "0.4.64"
-web-sys = { version = "0.3.91", features = [
+wasm-bindgen = "0.2.117"
+wasm-bindgen-futures = "0.4.67"
+web-sys = { version = "0.3.94", features = [
   "Animation",
   "AnimationEffect",
   "AnimationPlayState",
