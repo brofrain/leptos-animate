@@ -5,7 +5,7 @@ edition.workspace = true
 publish = false
 
 [dependencies]
-educe = "0.6.0"
+educe = "0.7.6"
 leptos = { workspace = true, features = ["csr"] }
 leptos_animate.workspace = true
 console_error_panic_hook.workspace = true
